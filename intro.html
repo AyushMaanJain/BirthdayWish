@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+<head>
+    <title>Birthday Wish</title>
+    
+  <style type="text/css">
+      @font-face {
+          font-family: birthday;
+          src: url("FondyScript_PERSONAL_USE_ONLY.ttf");
+      }
+  #background { background-image: url("birthdaymain.jpg"); background-repeat: no-repeat; background-size: 100% 100%; background-position: top; background-attachment: fixed; }
+      span#hi {
+          //opacity:0;
+          
+          -webkit-animation-name:eff1;
+      -webkit-animation-duration:3s;  
+      }
+      span#frnd {
+          //opacity: 0;
+          -webkit-animation-delay:2s;
+          -webkit-animation-name: eff1;
+          -webkit-animation-duration: 3s;
+      }
+      span#today {
+          //opacity: 0;
+          -webkit-animation-delay:5s;
+          -webkit-animation-name: eff1;
+          -webkit-animation-duration: 3s;
+      }
+
+      span#spec {
+          //opacity: 0;
+          -webkit-animation-delay: 7s;
+          -webkit-animation-name: eff1;
+          -webkit-animation-duration: 3s;
+      }
+      span#so {
+          //opacity: 0;
+          -webkit-animation-delay: 10s;
+          -webkit-animation-name: eff1;
+          -webkit-animation-duration: 3s;
+      }
+
+      span#we {
+          //opacity: 0;
+          -webkit-animation-delay: 12s;
+          -webkit-animation-name: eff1;
+          -webkit-animation-duration: 3s;
+      }
+      span#wish {
+          //opacity: 0;
+          -webkit-animation-delay: 16s;
+          -webkit-animation-name: eff1;
+          -webkit-animation-duration: 3s;
+      }
+      span.text {
+          opacity: 0;
+          width: 100%;
+          font-family: birthday;
+          text-align: center;
+          display: block;
+          position: absolute;
+          font-size: 6vw;
+          color: #ffffff;
+          font-weight: bolder;
+          text-shadow: 0px 0px 50px #000000;
+      }
+
+    
+      @-webkit-keyframes eff1{
+          0%{opacity:0;}
+          37%{opacity:1;}
+          67%{opacity:1;}
+          100%{opacity:0;}
+      }
+      
+  </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        function reset() {
+            var h = window.innerHeight;
+            var m = h / 2 - 70;
+            var m2 = h / 3;
+            $("document").ready(function () {
+                $("#wish").css("margin-top", m2 + "px");
+                $("#hi").css("margin-top", m + "px");
+                $("#frnd").css("margin-top", m + "px");
+                $("#today").css("margin-top", m + "px");
+                $("#spec").css("margin-top", m + "px");
+                $("#so").css("margin-top", m + "px");
+                $("#we").css("margin-top", m + "px");
+                $("#background").css("height", h + "px");
+            });
+        }
+    </script>
+</head>
+<body bgcolor="#000000" style="margin:0px;" onresize="reset()">
+    <div>
+        <div id="background">
+            <tt>
+                <span id="hi" class="text"> Hi </span>
+                <span id="frnd" class="text">Friend</span>
+                <span id="today" class="text">Today</span>
+                <span id="spec" class="text">is a Special day</span>
+                <span id="so" class="text">We all friends</span>
+                <span id="we" class="text">are wishing you</span>
+                <span id="wish" class="text">Many Many returns<br/>of the day</span>
+            </tt>
+        </div>
+    </div>
+    <script>
+        var h = window.innerHeight;
+        var m = h / 2 - 70;
+        var m2 = h / 3;
+        $("document").ready(function () {
+            $("#wish").css("margin-top", m2 + "px");
+            $("#hi").css("margin-top", m + "px");
+            $("#frnd").css("margin-top", m + "px");
+            $("#today").css("margin-top", m + "px");
+            $("#spec").css("margin-top", m + "px");
+            $("#so").css("margin-top", m + "px");
+            $("#we").css("margin-top", m + "px");
+            $("#background").css("height", h + "px");
+        });
+        setTimeout(function () {
+            window.location = "https://htmlcolorcodes.com/";
+        }, 18000);
+    </script>
+</body>
+</html>
