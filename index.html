@@ -8,51 +8,56 @@
           font-family: birthday;
           src: url("FondyScript_PERSONAL_USE_ONLY.ttf");
       }
-  #background { background-image: url("birthdaymain.jpg"); background-repeat: no-repeat; background-size: 100% 100%; background-position: top; background-attachment: fixed; }
+  #background { background-image: url("birthdaymain.jpg");
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                background-position: top;
+                background-attachment: fixed; }
       span#hi {
-          //opacity:0;
+          
           
           -webkit-animation-name:eff1;
       -webkit-animation-duration:3s;  
       }
       span#frnd {
-          //opacity: 0;
+          
           -webkit-animation-delay:2s;
           -webkit-animation-name: eff1;
           -webkit-animation-duration: 3s;
       }
       span#today {
-          //opacity: 0;
+          
           -webkit-animation-delay:5s;
           -webkit-animation-name: eff1;
           -webkit-animation-duration: 3s;
       }
 
       span#spec {
-          //opacity: 0;
+          
           -webkit-animation-delay: 7s;
           -webkit-animation-name: eff1;
           -webkit-animation-duration: 3s;
       }
       span#so {
-          //opacity: 0;
+          
           -webkit-animation-delay: 10s;
           -webkit-animation-name: eff1;
           -webkit-animation-duration: 3s;
       }
 
       span#we {
-          //opacity: 0;
-          -webkit-animation-delay: 12s;
+         
+          -webkit-animation-delay: 14s;
           -webkit-animation-name: eff1;
           -webkit-animation-duration: 3s;
       }
       span#wish {
-          //opacity: 0;
+        
           -webkit-animation-delay: 16s;
           -webkit-animation-name: eff1;
           -webkit-animation-duration: 3s;
       }
+
       span.text {
           opacity: 0;
           width: 100%;
@@ -66,7 +71,12 @@
           text-shadow: 0px 0px 50px #000000;
       }
 
-    
+      @media screen and (orientation:portrait) {
+          
+          #background{transform:rotate(90deg);}
+          
+      }
+
       @-webkit-keyframes eff1{
           0%{opacity:0;}
           37%{opacity:1;}
@@ -79,17 +89,24 @@
     <script>
         function reset() {
             var h = window.innerHeight;
+              var w = window.innerWidth;
             var m = h / 2 - 70;
             var m2 = h / 3;
+        
             $("document").ready(function () {
-                $("#wish").css("margin-top", m + "px");
+                $("#wish").css("margin-top", m2 + "px");
+                $("#so").css("margin-top", m2 + "px");
+                $("#spec").css("margin-top", m2 + "px");
                 $("#hi").css("margin-top", m + "px");
                 $("#frnd").css("margin-top", m + "px");
                 $("#today").css("margin-top", m + "px");
-                $("#spec").css("margin-top", m + "px");
-                $("#so").css("margin-top", m + "px");
-                $("#we").css("margin-top", m + "px");
-                $("#background").css("height", h + "px");
+                $("#we").css("margin-top", m2 + "px");
+        $( window ).on( "orientationchange", function( event ) {
+ Console.Log(event.orientation);
+});
+
+        $("#background").css("height", h + "px");
+        $("#background").css("width", w + "px");
             });
         }
     </script>
@@ -99,12 +116,12 @@
         <div id="background">
             <tt>
                 <span id="hi" class="text"> Hi </span>
-                <span id="frnd" class="text">Friend</span>
-                <span id="today" class="text">Today</span>
-                <span id="spec" class="text">is a Special day</span>
-                <span id="so" class="text">We all friends</span>
-                <span id="we" class="text">are wishing you</span>
-                <span id="wish" class="text">Many Many returns<br/>of the day</span>
+                <span id="frnd" class="text">Navita</span>
+                <span id="today" class="text">Today is</span>
+                <span id="spec" class="text">Birthday of <br/>very special girl</span>
+                <span id="so" class="text">who is very special for<br/>friends and family</span>
+                <span id="we" class="text">Happy birthday<br/>Navita</span>
+                <span id="wish" class="text">many many happy <br> returns of the day</span>
             </tt>
         </div>
     </div>
@@ -113,18 +130,18 @@
         var m = h / 2 - 70;
         var m2 = h / 3;
         $("document").ready(function () {
-            $("#wish").css("margin-top", m + "px");
+            $("#wish").css("margin-top", m2 + "px");
             $("#hi").css("margin-top", m + "px");
             $("#frnd").css("margin-top", m + "px");
             $("#today").css("margin-top", m + "px");
-            $("#spec").css("margin-top", m + "px");
-            $("#so").css("margin-top", m + "px");
-            $("#we").css("margin-top", m + "px");
+            $("#spec").css("margin-top", m2 + "px");
+            $("#so").css("margin-top", m2 + "px");
+            $("#we").css("margin-top", m2 + "px");
             $("#background").css("height", h + "px");
         });
         setTimeout(function () {
-            window.location = "https://ayushmaanjain.github.io/BirthdayWish/";
-        }, 18000);
+            window.location = "friendsWish.html";
+        }, 18500);
     </script>
 </body>
 </html>
