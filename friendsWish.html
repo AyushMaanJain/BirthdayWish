@@ -6,85 +6,95 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Include jQuery Mobile stylesheets -->
-    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
-    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-<style>
-    @font-face {
-        font-family: birthday;
-        src: url("FondyScript_PERSONAL_USE_ONLY.ttf");
-    }
-    *{user-select:none;}
-    b {
-        font-family: birthday;
-        color: whitesmoke;
-        text-shadow: 0px 0px 20px #000000;
-        
-        font-size: 8vw;
-    }
-    #bgimage {
-        
-        background-image: url("birthdayh.jpg");
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
-        background-position: top;
-        background-attachment: fixed;
-        
-    }
-    ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-    }
-
-    li {
-        font-weight: bolder;
-        font-size: 6vw;
-        width: 90%;
-        padding: 2px;
-        margin-top: 7px;
-        background: linear-gradient(to bottom,#f86bb6,#521033);
-        color:whitesmoke;
-        border-radius: 20px;
-        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-    }
-
-        li:active {
-            background: linear-gradient(to bottom,#521033,#f86bb6);
-            color: #f86bb6;
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <style>
+        @font-face {
+            font-family: birthday;
+            src: url("FondyScript_PERSONAL_USE_ONLY.ttf");
         }
-    #con{
-    
-    width:100%;
-    border:1px solid red;
-    }
-    #pageone {
-       
-        background-image: url("birthdaymain.jpg");
-        
-        background-size: 100% 100%;
-        background-position: center;
-        background-attachment: fixed;
-    }
-</style>
+
+        * {
+            user-select: none;
+        }
+
+        b {
+            font-family: birthday;
+            color: whitesmoke;
+            text-shadow: 0px 0px 20px #000000;
+            padding: 6px;
+            font-size: 5vw;
+        }
+
+        #bgimage {
+            background-image: url("birthdayh.jpg");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-position: top;
+            background-attachment: fixed;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            font-weight: bolder;
+            font-size: 3vw;
+            width: 90%;
+            padding: 2px;
+            margin-top: 7px;
+            background: linear-gradient(to bottom,#f86bb6,#521033);
+            color: whitesmoke;
+            border-radius: 20px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        }
+
+            li:active {
+                background: linear-gradient(to bottom,#521033,#f86bb6);
+                color: #f86bb6;
+            }
+
+        #con {
+            width: 100%;
+            border: 1px solid red;
+        }
+
+        #pageone {
+            background-image: url("birthdaymain.jpg");
+            background-size: 100% 100%;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        @media screen and (orientation:portrait) {
+
+            b {
+                font-size: 10vw;
+            }
+            li {
+                font-size: 7vw;
+            }
+            }
+    </style>
     <script>
-    var h = window.innerHeight;
-              var w = window.innerWidth;
+        var h = window.innerHeight;
+        var w = window.innerWidth;
         $("document").ready(function () {
-    $("#pageone").css("height", h + "px");
-        $("#pageone").css("width", w + "px");
+            $("#pageone").css("height", h + "px");
+            $("#pageone").css("width", w + "px");
         });
     </script>
 </head>
 <body style="margin:0px;">
-    <div data-role="page" id="pageone">
+    <div  id="pageone">
         
-            
-            <div data-role="header" data-position="fixed" data-theme="a" style=" background:rgba(240, 240, 240, 0.80);box-shadow: 0 4px 5px rgba(0,0,0,0.12), 0 4px 5px rgba(0,0,0,0.14)">
-                <center style="padding: 6px;"><b>Friend's Wish</b></center>
+            <!--<div data-role="header" data-position="fixed" id="bgimage"><h1><b></b></h1></div>-->
+            <div data-position="fixed" data-theme="a" style=" background:rgba(240, 240, 240, 0.80);box-shadow: 0 4px 5px rgba(0,0,0,0.12), 0 4px 5px rgba(0,0,0,0.14)">
+                <center><b>Friend's Wish</b></center>
             </div>
             
-            <div data-role="content" style="padding-left:0px;padding-right:0px;">
+            <div  style="padding-left:0px;padding-right:0px;">
                 <center>
                     <ul>
                         <li>Friend1</li>
