@@ -72,9 +72,10 @@
       }
 
       @media screen and (orientation:portrait) {
-          
-          #background{transform:rotate(90deg);}
-          
+
+          span.text {
+              font-size: 10vw;
+          }
       }
 
       @-webkit-keyframes eff1{
@@ -91,7 +92,7 @@
             var h = window.innerHeight;
               var w = window.innerWidth;
             var m = h / 2 - 70;
-            var m2 = h / 3;
+            var m2 = h / 160;
         
             $("document").ready(function () {
                 $("#wish").css("margin-top", m2 + "px");
