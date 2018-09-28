@@ -71,9 +71,17 @@
             $("#pageone").css("height", h + "px");
             $("#pageone").css("width", w + "px");
         });
+        function reset() {
+            var h = window.innerHeight;
+            var w = window.innerWidth;
+            $("document").ready(function () {
+                $("#pageone").css("height", h + "px");
+                $("#pageone").css("width", w + "px");
+            });
+        }
     </script>
 </head>
-<body style="margin:0px;">
+<body style="margin:0px;" onresize="reset()">
     <div  id="pageone">
         
             <!--<div data-role="header" data-position="fixed" id="bgimage"><h1><b></b></h1></div>-->
@@ -87,7 +95,7 @@
                         <li>A special friend like you deserves all the wonderful blessings not only today, but every day! Happy birthday, Navita May all your wishes come true. I wish you all the wonderful things in life, and may this day bring you an extra dose of love and happiness
                       <span style="font-weight:bold">--Ayush Jain</span>
                         </li>
-                        <li>Hii Navita This is Priys and I Hope that ur innocent smile on your face never ever fade away.You are an absolute sweetheart......
+                        <li>Hii Navita This is Priya and I Hope that ur innocent smile on your face never ever fade away.You are an absolute sweetheart......
 Dear wishing you a very very happy birthday🎂<span style="font-weight:bold">--Priya Kashyap</span></li>
                         <li>My best wishes to my special friend Navita. I wish you to live long life, many many happy returns of the day
                         <span style="font-weight:bold">--Meenakshi Kashyap</span>
